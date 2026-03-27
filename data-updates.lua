@@ -182,77 +182,79 @@ table.insert(data.raw["technology"]["kr-advanced-furnace"].prerequisites, "aop-a
 -- === specialized sciences ===
 -- ============================
 
-patchRecipes({
-	"aop-military-specialized-metallurgic-science-pack",
-	"aop-hydraulics-specialized-cryogenic-science-pack",
-	"aop-petrochemistry-specialized-electromagnetic-science-pack",
-	"aop-hybridation-specialized-agricultural-science-pack",
-}, {
-	["metallurgic-science-pack"] = { name = "kr-metallurgic-research-data" },
-	["cryogenic-science-pack"] = { name = "kr-cryogenic-research-data" },
-	["electromagnetic-science-pack"] = { name = "kr-electromagnetic-research-data" },
-	["agricultural-science-pack"] = { name = "kr-agricultural-research-data" },
-})
+if settings["aop-specialized-science"].value then
+	patchRecipes({
+		"aop-military-specialized-metallurgic-science-pack",
+		"aop-hydraulics-specialized-cryogenic-science-pack",
+		"aop-petrochemistry-specialized-electromagnetic-science-pack",
+		"aop-hybridation-specialized-agricultural-science-pack",
+	}, {
+		["metallurgic-science-pack"] = { name = "kr-metallurgic-research-data" },
+		["cryogenic-science-pack"] = { name = "kr-cryogenic-research-data" },
+		["electromagnetic-science-pack"] = { name = "kr-electromagnetic-research-data" },
+		["agricultural-science-pack"] = { name = "kr-agricultural-research-data" },
+	})
 
-setIcons(data.raw["recipe"]["aop-military-specialized-metallurgic-science-pack"], {
-	{
-		icon = "__k2so-assets__/icons/cards/metallurgic-research-data.png",
-		icon_size = 64,
-		scale = 0.65,
-		shift = { 2, -2 },
-	},
-	{
-		icon = "__Age-of-Production-Graphics__/graphics/icons/explosive-core.png",
-		scale = 0.45,
-		icon_size = 64,
-		shift = { -11, 11 },
-	},
-})
+	setIcons(data.raw["recipe"]["aop-military-specialized-metallurgic-science-pack"], {
+		{
+			icon = "__k2so-assets__/icons/cards/metallurgic-research-data.png",
+			icon_size = 64,
+			scale = 0.65,
+			shift = { 2, -2 },
+		},
+		{
+			icon = "__Age-of-Production-Graphics__/graphics/icons/explosive-core.png",
+			scale = 0.45,
+			icon_size = 64,
+			shift = { -11, 11 },
+		},
+	})
 
-setIcons(data.raw["recipe"]["aop-hydraulics-specialized-cryogenic-science-pack"], {
-	{
-		icon = "__k2so-assets__/icons/cards/cryogenic-research-data.png",
-		icon_size = 64,
-		scale = 0.65,
-		shift = { 2, -2 },
-	},
-	{
-		icon = "__Age-of-Production-Graphics__/graphics/icons/lithium-fluoride.png",
-		icon_size = 64,
-		scale = 0.45,
-		shift = { -11, 11 },
-	},
-})
+	setIcons(data.raw["recipe"]["aop-hydraulics-specialized-cryogenic-science-pack"], {
+		{
+			icon = "__k2so-assets__/icons/cards/cryogenic-research-data.png",
+			icon_size = 64,
+			scale = 0.65,
+			shift = { 2, -2 },
+		},
+		{
+			icon = "__Age-of-Production-Graphics__/graphics/icons/lithium-fluoride.png",
+			icon_size = 64,
+			scale = 0.45,
+			shift = { -11, 11 },
+		},
+	})
 
-setIcons(data.raw["recipe"]["aop-petrochemistry-specialized-electromagnetic-science-pack"], {
-	{
-		icon = "__k2so-assets__/icons/cards/electromagnetic-research-data.png",
-		icon_size = 64,
-		scale = 0.65,
-		shift = { 2, -2 },
-	},
-	{
-		icon = "__Age-of-Production-Graphics__/graphics/icons/magnetic-flow-meter.png",
-		icon_size = 64,
-		scale = 0.45,
-		shift = { -11, 11 },
-	},
-})
+	setIcons(data.raw["recipe"]["aop-petrochemistry-specialized-electromagnetic-science-pack"], {
+		{
+			icon = "__k2so-assets__/icons/cards/electromagnetic-research-data.png",
+			icon_size = 64,
+			scale = 0.65,
+			shift = { 2, -2 },
+		},
+		{
+			icon = "__Age-of-Production-Graphics__/graphics/icons/magnetic-flow-meter.png",
+			icon_size = 64,
+			scale = 0.45,
+			shift = { -11, 11 },
+		},
+	})
 
-setIcons(data.raw["recipe"]["aop-hybridation-specialized-agricultural-science-pack"], {
-	{
-		icon = "__k2so-assets__/icons/cards/agricultural-research-data.png",
-		icon_size = 64,
-		scale = 0.65,
-		shift = { 2, -2 },
-	},
-	{
-		icon = "__Age-of-Production-Graphics__/graphics/icons/hybrid-bacteria-1.png",
-		icon_size = 64,
-		scale = 0.45,
-		shift = { -11, 11 },
-	},
-})
+	setIcons(data.raw["recipe"]["aop-hybridation-specialized-agricultural-science-pack"], {
+		{
+			icon = "__k2so-assets__/icons/cards/agricultural-research-data.png",
+			icon_size = 64,
+			scale = 0.65,
+			shift = { 2, -2 },
+		},
+		{
+			icon = "__Age-of-Production-Graphics__/graphics/icons/hybrid-bacteria-1.png",
+			icon_size = 64,
+			scale = 0.45,
+			shift = { -11, 11 },
+		},
+	})
+end
 
 -- ============================
 -- === air scrubbing tweaks ===
