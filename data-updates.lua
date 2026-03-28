@@ -182,7 +182,7 @@ table.insert(data.raw["technology"]["kr-advanced-furnace"].prerequisites, "aop-a
 -- === specialized sciences ===
 -- ============================
 
-if settings["aop-specialized-science"].value then
+if settings.startup["aop-specialized-science"].value then
 	patchRecipes({
 		"aop-military-specialized-metallurgic-science-pack",
 		"aop-hydraulics-specialized-cryogenic-science-pack",
