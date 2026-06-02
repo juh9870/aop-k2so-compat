@@ -1,8 +1,11 @@
 [![Release](https://github.com/juh9870/aop-k2so-compat/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/juh9870/aop-k2so-compat/actions/workflows/release.yml)
 
-A mod that adds compatibility between [K2SO](https://mods.factorio.com/mod/Krastorio2-spaced-out) and [Age of Production](https://mods.factorio.com/mod/Age-of-Production)
+A mod that adds compatibility between [K2SO](https://mods.factorio.com/mod/Krastorio2-spaced-out) and [Age of Production](https://mods.factorio.com/mod/Age-of-Production) version 1.8.2 only
 
 Compatiblity is aimed to be Krastorio-centric, removing machines or tweaking recipes to fit with it, not the other way around.
+
+# Age of Production 2.0 warning
+This mod is **only** compatible with Age of Production 1.8.2 or below. Version 1.9 removed a bunch of machines and version 2.0 pivoted into being an overhaul, which makes creating compatibility a much harder endeavour.
 
 List of changes:
 - Advanced Assembling Machine is removed in favor of K2SO machine of the same name
